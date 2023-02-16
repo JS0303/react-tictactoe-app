@@ -1,7 +1,9 @@
+import { useState } from "react";
 import "./App.css";
 import Board from "./components/Board";
 
 function App() {
+  const [history, setHistory] = useState([{ squares: Array(9).fill(null) }]);
   return (
     <div className="game">
       <div className="game-board">
